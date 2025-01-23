@@ -19,7 +19,7 @@
             display-name = "Fn";
             bindings = // etc.
                 &trans     &none    &none
-                &none    &none    &none
+                &bootloader    &none    &none
                 &none    &none    &none
         };
 
