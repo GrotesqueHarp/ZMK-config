@@ -1,3 +1,4 @@
+#include <Macro3x3-layouts.dsti>
 #include <dt-bindings/zmk/matrix_transform.h>
 
  / {
