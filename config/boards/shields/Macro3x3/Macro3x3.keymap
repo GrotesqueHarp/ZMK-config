@@ -7,7 +7,7 @@
         compatible = "zmk,keymap";
 
         default_layer { // Layer 0
-            display-name = "Base;"
+            display-name = "Base";
             bindings = <
                 &mo 1      &kp F21        &kp F22
                 &kp F18    &kp F19        &kp F20
@@ -25,4 +25,4 @@
         };
 
     };
- };
+};
