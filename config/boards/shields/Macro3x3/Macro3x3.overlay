@@ -2,7 +2,7 @@
 #include "Macro3x3-layouts.dsti"
 
     &physical_layout0 {
-    transform = <&matrix_transform0>;
+    transform = <&default_transform>;
     };
 
  / {
