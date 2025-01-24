@@ -33,8 +33,9 @@
         >;
     };
 
-    &physical_layout_0 {
+};
+
+    &physical_layout0 {
     kscan = <&kscan0>;
     transform = <&matrix_transform0>;
     };
-};
