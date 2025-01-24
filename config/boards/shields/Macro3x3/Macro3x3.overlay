@@ -1,5 +1,9 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include <physical_layouts.dtsi>
+#include <Macro3x3-layouts.dtsi>
+
+    &physical_layout0 {
+    transform = <&matrix_transform0>;
+    };
 
  / {
     kscan0: kscan0 {
@@ -35,12 +39,3 @@
     };
 
 };
-
-/ {
-    #include "config/boards/shields/Macro3x3/Macro3x3-layouts.dsti"
-
-    &physical_layout0 {
-    transform = <&matrix_transform0>;
-    };
-};
-
