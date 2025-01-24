@@ -35,7 +35,9 @@
 
 };
 
-    &physical_layout0 {
+#include <Macro3x3-layouts.dsti>
+
+&physical_layout0 {
     kscan = <&kscan0>;
     transform = <&matrix_transform0>;
     };
