@@ -19,7 +19,7 @@
             display-name = "Fn";
             bindings = <
                 &trans            &none        &none
-                &studio_unlock    &bootloader  &none
+                &studio_unlock    &bootloader  &sys_reset
                 &none             &none        &none
             >;
         };
