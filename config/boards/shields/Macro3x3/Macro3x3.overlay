@@ -6,6 +6,15 @@
     };
 
  / {
+
+    encoder: encoder {
+        compatible = "alps,ec11";
+        a-gpios = <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <20>;
+        status = "okay";
+    };
+
     kscan0: kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
@@ -40,13 +49,7 @@
         >;
     };
 
-    encoder: encoder {
-        compatible = "alps,ec11";
-        a-gpios = <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <20>;
-        status = "okay";
-    };
+    
 
 };
 
