@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "*.dsti": "cpp",
-        "*.overlay": "cpp"
+        "*.overlay": "cpp",
+        "*.dtsi": "cpp"
     }
 }
