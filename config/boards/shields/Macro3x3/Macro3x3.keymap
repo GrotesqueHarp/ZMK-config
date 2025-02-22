@@ -16,7 +16,7 @@
         default_layer { // Layer 0
             display-name = "Base";
             
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp A B>;
 
             bindings = <
                 &mo 1      &kp F21        &kp F22
