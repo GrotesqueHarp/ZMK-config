@@ -3,20 +3,6 @@
 
 
 / {
-
-    behaviors {
-        encoder1: sensor_rotate_kp {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            #sensor-binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
-        };
-    };
-
-    sensors: sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&encoder>;
-        triggers-per-rotation = <20>;
-    };
     
 
     keymap {
@@ -25,7 +11,7 @@
         default_layer { // Layer 0
             display-name = "Base";
             
-            sensor-bindings = <&encoder1 C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&encoder C_VOLUME_UP C_VOLUME_DOWN>;
 
             bindings = <
                 &mo 1      &kp F21        &kp F22
@@ -37,7 +23,7 @@
         fn_layer { // Layer 1
             display-name = "Fn";
 
-            sensor-bindings = <&encoder1 C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&encoder C_VOLUME_UP C_VOLUME_DOWN>;
 
             bindings = <
                 &trans            &mo 2        &none
@@ -49,7 +35,7 @@
         extra1 { // Layer 2
             display-name = "extra1";
 
-            sensor-bindings = <&encoder1 C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&encoder C_VOLUME_UP C_VOLUME_DOWN>;
 
             bindings = <
                 &trans    &trans     &none
