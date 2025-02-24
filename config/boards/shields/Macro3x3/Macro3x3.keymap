@@ -4,11 +4,20 @@
 
 / {
 
+    behaviors {
+        inc_dec_kp: sensor_rotate_kp {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&encoder>;
         triggers-per-rotation = <20>;
     };
+    
 
     keymap {
         compatible = "zmk,keymap";
