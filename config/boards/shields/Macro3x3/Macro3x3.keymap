@@ -4,6 +4,9 @@
 
 / {
     
+    &encoder {
+        status = "okay";
+    };
 
     keymap {
         compatible = "zmk,keymap";
