@@ -14,7 +14,7 @@
         default_layer { // Layer 0
             display-name = "Base";
             
-            sensor-bindings = <&encoder C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp  C_VOLUME_UP C_VOLUME_DOWN>;
 
             bindings = <
                 &mo 1      &kp F21        &kp F22
@@ -26,7 +26,7 @@
         fn_layer { // Layer 1
             display-name = "Fn";
 
-            sensor-bindings = <&encoder C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp  C_VOLUME_UP C_VOLUME_DOWN>;
 
             bindings = <
                 &trans            &mo 2        &none
@@ -38,7 +38,7 @@
         extra1 { // Layer 2
             display-name = "extra1";
 
-            sensor-bindings = <&encoder C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp  C_VOLUME_UP C_VOLUME_DOWN>;
 
             bindings = <
                 &trans    &trans     &none
