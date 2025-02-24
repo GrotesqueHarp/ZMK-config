@@ -58,5 +58,5 @@
 };
 
 &encoder {
-    steps = <70>;
+    steps = <60>;
 };       
